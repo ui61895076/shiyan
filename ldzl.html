@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+		<title>流动阻力实验</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		html,body{
+			width: 100%;
+			
+			overflow: hidden;
+		}
+		ul{
+			list-style: none;
+		}
+		ul li{
+			text-align: center;
+			line-height: 34px;
+		}
+		ul li:nth-child(even){
+			background: #fffff5;
+			
+		}
+			.bg{
+				width: 100%;
+				background: #3589e3;
+				padding-top: 10px;
+			}
+			.fz-h1{
+				font-size: 20px;
+				color: #fff;
+				
+				text-align: center;
+				
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container hh">
+			<div class="row" style="background: #3589e3;">
+				<div class="col-md-12" >
+					<h1 class="fz-h1">流动阻力实验流程图</h1>
+				</div>
+				<div class="col-md-12 bg">
+					<img src="img/ldzl.jpg" class="img-responsive center-block" />
+				</div>
+			</div>
+			
+		</div>
+		<div class="container" style="padding-left: 0;padding-right: 0;">
+			<div class="row" style="background: #f4f4f4;">
+				<div class="col-md-12" >
+					<h1 class="fz-h1" style="color: #333;border-bottom:1px solid #CCCCCC;line-height: 44px;">流动阻力装置各部分名称</h1>
+					<div id="wrapper" style="overflow: hidden;width: 100%;padding-bottom: 40px;height: 200px;">
+					  <ul >
+						<li>1—水箱</li>
+						<li>2—水箱温度传感器</li>
+						<li>3—离心泵</li>
+						<li>4—涡轮流量计</li>
+						<li>5—光滑管倒U形管压差计</li>
+						<li>6—闸阀倒U形管压差计</li>
+						<li>7—孔板流量计倒U形管压差计</li>
+						<li>8—粗糙管倒U形管压差计</li>
+						<li>9—放大缩小管倒U形管压差计</li>
+						<li>10—闸阀</li>
+						<li>11—孔板流量计</li>
+						<li>12—放大缩小管（测突然缩小阻力）</li>
+						<li>13—离心泵出口（流量调节）阀</li>
+						<li>14—局部阻力入口阀</li>
+						<li>15—粗糙管入口阀</li>
+						<li>16—光滑管入口阀</li>
+						<li>17—管路排气阀前置球阀</li>
+						<li>18—管路排气阀</li>
+						<li>19—（光滑管）倒U形管压差计进气阀</li>
+						<li>20—（光滑管）倒U形管压差计高压侧阀</li>
+						<li>21—（光滑管）倒U形管压差计低压侧阀</li>
+						<li>22—（光滑管）倒U形管压差计高压侧平衡阀</li>
+						<li>23—（光滑管）倒U形管压差计低压侧平衡阀</li>
+						<li>24—（光滑管）倒U形管压差计排水阀</li>
+						<li>25—光滑管出口阀</li>
+						<li>26—局部阻力出口阀</li>
+						<li>27—粗糙管出口阀</li>
+						<li>28—水箱进水阀</li>
+						<li>29—水箱排水阀</li>
+					
+						
+						
+						
+				   	  </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="padding-left: 0;padding-right: 0;">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="fz-h1" style="color: #333;border-bottom:1px solid #CCCCCC;line-height: 44px;">装置参数</h1>
+				</div>
+				<div class="col-md-12" style="text-align: center;">
+					<ul>
+						<li>光滑管：管径为26mm，测压点间距为1600mm</li>
+						<li>粗糙管：管径为26mm，测压点间距为1600mm</li>
+						<li>闸阀：管径为26mm</li>
+						<li>孔板流量计：开孔直径为19.193mm</li>
+						<li>突然放大管：从小直径d1=26mm放大到d2=42mm</li>
+						<li>孔板流量计：开孔直径为19.193mm</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/zepto.min.js" ></script>
+<script type="text/javascript" src="js/iscroll-5.1.3.min.js" ></script>
+<script>
+//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    var warp=document.querySelector('#wrapper');
+  
+	var myScroll = new IScroll('#wrapper',{
+		 mouseWheel: true,
+         scrollbars: true
+	});
+</script>
